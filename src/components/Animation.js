@@ -20,7 +20,9 @@ function Animation(){
                 'select',
                 'textarea',
                 'button',
-                '.link'
+                '.link',
+                'div[class="swiper-button-prev"]',
+                'div[class="swiper-button-next"]'
             ]}
         />
     )
