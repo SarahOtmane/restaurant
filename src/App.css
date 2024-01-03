@@ -1,0 +1,162 @@
+/* 
+        Sommaire 
+
+    1:= Les fonts
+    2:= Global css
+    3:= Global classes
+    4:= Header
+    5:= Home
+
+*/
+
+/* ----------- Fonts ----------- */
+@font-face {
+    font-family: 'grotesque_mt';
+    src: url('./assets/fonts/grotesque/grotesquemt-webfont.eot');
+    src: url('./assets/fonts/grotesque/grotesquemt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/grotesque/grotesquemt-webfont.woff2') format('woff2'),
+         url('./assets/fonts/grotesque/grotesquemt-webfont.woff') format('woff'),
+         url('./assets/fonts/grotesque/grotesquemt-webfont.svg#grotesque_mtregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'juliette';
+    src: url('./assets/fonts/juliette-lg5o0-webfont.eot');
+    src: url('./assets/fonts/juliette-lg5o0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/juliette-lg5o0-webfont.woff2') format('woff2'),
+         url('./assets/fonts/juliette-lg5o0-webfont.woff') format('woff'),
+         url('./assets/fonts/juliette-lg5o0-webfont.svg#julietteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+@font-face {
+    font-family: 'juliette';
+    src: url('./assets/fonts/juliette/juliette-lg5o0-webfont.eot'),
+         url('./assets/fonts/juliette/juliette-lg5o0-webfont.eot#iefix') format('embedded-opentype'),
+         url('./assets/fonts/juliette/juliette-lg5o0-webfont.woff2') format('woff2'),
+         url('./assets/fonts/juliette/juliette-lg5o0-webfont.woff') format('woff'),
+         url('./assets/fonts/juliette/juliette-lg5o0-webfont.svg#julietteregular')format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ----------- Global css ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'grotesque_mt', sans-serif;
+}
+
+main, .h-100{
+    min-height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* ----------- Global classes ----------- */
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-max-c{
+    width: max-content;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* ----------- Header ----------- */
+.header{
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: .5px solid white;
+    height: max-content;
+    padding: 1.5rem 0;
+
+    z-index: 100;
+}
+
+.header .link, .slide .link{
+    color: white;
+}
+
+.header h3 .link{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.header ul{
+    align-items: center;
+    font-size: 1.8rem;
+    margin-right: 3%;
+}
+
+.header li .link{
+    margin-left: 2rem;
+}
+
+/* ----------- Home ----------- */
+.slide{
+    max-height: 100vh;
+}
+
+.slide-1{
+    background-color: black;
+}
+
+.slide-2{
+    background-color: #68756b;
+}
+
+.slide-3{
+    background-color: #526774;
+}
+
+.slide-4{
+    background-color: #bfbdb1;
+}
+
+.slide img{
+    width: 70%;
+    margin-top: -4rem;
+}
+
+.slide div{
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 25%;
+}
+
+.slide span{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.slide h2{
+    font-size: 8rem;
+    margin-top: 4rem;
+}
