@@ -2,17 +2,53 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 import accueil from '../assets/accueil.png';
+import reservation from '../assets/reservation.png';
+import menu from '../assets/menu.png';
 
 function Home(){
 
     return(
         <main className="home">
-            <Swiper navigation={true} modules={[Navigation]} className='swiper h-100' >
-                <SwiperSlide>
-                    <img src={accueil} alt='' />
+            <Swiper pagination={{type: 'progressbar',}} navigation={true} modules={[Pagination, Navigation]} className='swiper h-100' >
+                <SwiperSlide className='slide slide-1 h-100'>
+                    <center>
+                        <img src={accueil} alt='' />
+                    </center>
+                    <div>
+                        <span>01</span>
+                        <h2><Link to='/accueil' className='link'>Accueil</Link></h2>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='slide slide-2 h-100'>
+                    <center>
+                        <img src={reservation} alt='' />
+                    </center>
+                    <div>
+                        <span>02</span>
+                        <h2><Link to='/reservation' className='link'>Réservation</Link></h2>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='slide slide-3 h-100'>
+                    <center>
+                        <img src={menu} alt='' />
+                    </center>
+                    <div>
+                        <span>03</span>
+                        <h2><Link to='/menu' className='link'>Menu</Link></h2>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='slide slide-4 h-100'>
+                    <center>
+                        <img src={accueil} alt='' />
+                    </center>
+                    <div>
+                        <span>04</span>
+                        <h2><Link to='/boisson' className='link'>Boissons</Link></h2>
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </main>
