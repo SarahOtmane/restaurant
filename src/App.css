@@ -2,14 +2,15 @@
         Sommaire 
 
     1:= Les fonts
-    2:= Global css
-    3:= Global classes
-    4:= Header
-    5:= Home
+    2:= Constantes
+    3:= Global css
+    34:= Global classes
+    5:= Header
+    6:= Home
 
 */
 
-/* ----------- Fonts ----------- */
+/* ----------- 1:= Fonts ----------- */
 @font-face {
     font-family: 'grotesque_mt';
     src: url('./assets/fonts/grotesque/grotesquemt-webfont.eot');
@@ -20,18 +21,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/* @font-face {
-    font-family: 'juliette';
-    src: url('./assets/fonts/juliette-lg5o0-webfont.eot');
-    src: url('./assets/fonts/juliette-lg5o0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./assets/fonts/juliette-lg5o0-webfont.woff2') format('woff2'),
-         url('./assets/fonts/juliette-lg5o0-webfont.woff') format('woff'),
-         url('./assets/fonts/juliette-lg5o0-webfont.svg#julietteregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-} */
 
 @font-face {
     font-family: 'juliette';
@@ -45,7 +34,17 @@
 }
 
 
-/* ----------- Global css ----------- */
+
+/* ----------- 2:= Constantes ----------- */
+:root{
+    --noir : #212121;
+    --vert : #68756b;
+    --bleu : #526774;
+    --jaune : #bfbdb1;
+}
+
+
+/* ----------- 3:= Global css ----------- */
 *{
     margin: 0;
     padding: 0;
@@ -60,7 +59,7 @@ ul{
     list-style-type: none;
 }
 
-/* ----------- Global classes ----------- */
+/* ----------- 4:= Global classes ----------- */
 .row{
     display: flex;
     flex-direction: row;
@@ -88,7 +87,7 @@ ul{
     text-decoration: none;
 }
 
-/* ----------- Header ----------- */
+/* ----------- 5:= Header ----------- */
 .header{
     position: fixed;
     justify-content: space-between;
@@ -118,25 +117,25 @@ ul{
     margin-left: 2rem;
 }
 
-/* ----------- Home ----------- */
+/* ----------- 6:= Home ----------- */
 .slide{
     max-height: 100vh;
 }
 
 .slide-1{
-    background-color: black;
+    background-color: var(--noir);
 }
 
 .slide-2{
-    background-color: #68756b;
+    background-color: var(--vert);
 }
 
 .slide-3{
-    background-color: #526774;
+    background-color: var(--bleu);
 }
 
 .slide-4{
-    background-color: #bfbdb1;
+    background-color: var(--jaune);
 }
 
 .slide img{
