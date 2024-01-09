@@ -20,7 +20,7 @@ function Home(){
                     </center>
                     <div>
                         <span>01</span>
-                        <h2><Link to='/accueil' className='link'>Accueil</Link></h2>
+                        <h2><Link to='/accueil' className='link'>Le Maxime</Link></h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide slide-2 h-100'>
