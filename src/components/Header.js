@@ -6,10 +6,10 @@ function Header(){
             <h3><Link to='/' className="link">Le Maxime</Link></h3>
 
             <ul className="row">
-                <li><Link className="link">Accueil</Link></li>
-                <li><Link className="link">Réservation</Link></li>
-                <li><Link className="link">Menu</Link></li>
-                <li><Link className="link">Boissons</Link></li>
+                <li><Link to='/accueil' className="link">Accueil</Link></li>
+                <li><Link to='/reservation' className="link">Réservation</Link></li>
+                <li><Link to='/menu' className="link">Menu</Link></li>
+                <li><Link to='/boisson' className="link">Boissons</Link></li>
             </ul>
         </header>
     )
