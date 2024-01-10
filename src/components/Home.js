@@ -14,7 +14,7 @@ function Home(){
     return(
         <main className="home">
             <Swiper pagination={{type: 'progressbar',}} navigation={true} modules={[Pagination, Navigation]} className='swiper h-100' >
-                <SwiperSlide className='slide slide-1 h-100'>
+                <SwiperSlide className='slide back_noir h-100'>
                     <center>
                         <img src={accueil} alt='' />
                     </center>
@@ -23,7 +23,7 @@ function Home(){
                         <h2><Link to='/accueil' className='link'>Le Maxime</Link></h2>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='slide slide-2 h-100'>
+                <SwiperSlide className='slide back_vert h-100'>
                     <center>
                         <img src={reservation} alt='' />
                     </center>
@@ -32,7 +32,7 @@ function Home(){
                         <h2><Link to='/reservation' className='link'>Réservation</Link></h2>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='slide slide-3 h-100'>
+                <SwiperSlide className='slide back_bleu h-100'>
                     <center>
                         <img src={menu} alt='' />
                     </center>
@@ -41,7 +41,7 @@ function Home(){
                         <h2><Link to='/menu' className='link'>Menu</Link></h2>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className='slide slide-4 h-100'>
+                <SwiperSlide className='slide back_gris h-100'>
                     <center>
                         <img src={accueil} alt='' />
                     </center>
