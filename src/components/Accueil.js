@@ -15,9 +15,9 @@ import { CiCreditCard2 } from "react-icons/ci";
 import { MdAirplaneTicket, MdOutlinePets } from "react-icons/md";
 import { BsTicketDetailed } from "react-icons/bs";
 import { FaLocationDot, FaChampagneGlasses } from "react-icons/fa6";
-import { TbAirConditioning } from "react-icons/tb";
 import { IoBag } from "react-icons/io5";
-import { GrWifi } from "react-icons/gr";
+// import { TbAirConditioning } from "react-icons/tb";
+// import { GrWifi } from "react-icons/gr";
 
 import Footer from './Footer';
 
@@ -31,7 +31,7 @@ function Accueil(){
                     </center>
                     <article>
                         <span>Découvrez notre restaurant</span>
-                        <h1>LE VÉGETAL</h1>
+                        <h1>Le Végétal</h1>
                     </article>
                 </section>
 
@@ -40,13 +40,13 @@ function Accueil(){
                     <div className='row w-100'>
                         <article className='gauche'>
                             <p>
-                                Bienvenue chez Le Maxime, l'endroit idéal pour une expérience gastronomique inoubliable ! 
+                                Bienvenue chez Le Végétal, l'endroit idéal pour une expérience gastronomique inoubliable ! 
                                 Si vous cherchez le lieu parfait pour un repas délicieux et une soirée mémorable, vous êtes au bon endroit. 
                                 Au cœur de notre restaurant, découvrez une diversité de plats exquis que vous pourrez savourer dans une atmosphère chaleureuse et conviviale.
                             </p>
                             <p>
-                                Nous sommes ouverts tous les jours, et nous vous invitons à venir nous rendre visite à tout moment. 
-                                Chez Le Maxime, chaque repas est une célébration de la bonne cuisine et de la convivialité.
+                                Nous sommes ouverts du mardi au samedi, et nous vous invitons à venir nous rendre visite à tout moment. 
+                                Chez Le Végétal, chaque repas est une célébration de la bonne cuisine et de la convivialité.
                             </p>
                         </article>
                         <article className='droite'>
@@ -74,7 +74,7 @@ function Accueil(){
                             <div className='row joursOuv justify-content-space-be'><span>Vendredi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
                             <div className='row joursOuv justify-content-space-be'><span>Samedi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
 
-                            <div className='icon'><FaLocationDot className='icon' /> Vegetal, 9 Rle des Chats, 10000 Troyes</div>
+                            <div className='icon'><FaLocationDot className='icon' /> Vegetal, 9 Ruelle des Chats, 10000 Troyes</div>
                         </article>
                         <img src={accueil_horaires} alt='' />
                     </div>
@@ -127,7 +127,7 @@ function Accueil(){
                         <img src={accueil_aboutUs} alt='' />
                         <article>
                             <h2>À propos du Végétal :</h2>
-                            <span>Depuis 1989</span>
+                            <span>Depuis 2023</span>
                             <p>
                             Le Maxime, un restaurant établi depuis 1989, occupe une place privilégiée au cœur historique de Troyes, niché dans un charmant immeuble à colombages du 17ème siècle, à proximité de l'église Saint-Jean-au-Marché sur la place du marché au pain.
                             <br></br> <br></br>
@@ -141,14 +141,14 @@ function Accueil(){
 
                 <hr></hr>
 
-                <section className='paiement'>
+                <section className='paiement service'>
                     <h2 className='w-max-c m-auto'>Nos services</h2>
                     <div className='row w-100 justify-content-space-be'>
-                        <article className='column droite'>
+                        {/* <article className='column droite'>
                             <TbAirConditioning className='icon'></TbAirConditioning>
                             <span>Climatisation</span>
-                        </article>
-                        <article className='column'>
+                        </article> */}
+                        <article className='column droite'>
                             <FaUmbrellaBeach className='icon'></FaUmbrellaBeach>
                             <span>Terrasse</span>
                         </article>
@@ -158,15 +158,15 @@ function Accueil(){
                         </article>
                         <article className='column'>
                             <IoBag className='icon'></IoBag>
-                            <span>À emporté</span>
+                            <span>À emporter</span>
                         </article>
-                        <article className='column'>
+                        {/* <article className='column'>
                             <GrWifi className='icon'></GrWifi>
                             <span>Wifi gratuit</span>
-                        </article>
+                        </article>  */}
                         <article className='column gauche'>
                             <MdOutlinePets className='icon'></MdOutlinePets>
-                            <span>Animaux domestique autorisés</span>
+                            <span>Animaux autorisés</span>
                         </article>
                     </div>
                 </section>

@@ -20,7 +20,7 @@ function Home(){
                     </center>
                     <div>
                         <span>01</span>
-                        <h2><Link to='/accueil' className='link'>Le Maxime</Link></h2>
+                        <h2><Link to='/accueil' className='link titre'>Le Végétal</Link></h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_vert h-100'>
@@ -29,7 +29,7 @@ function Home(){
                     </center>
                     <div>
                         <span>02</span>
-                        <h2><Link to='/reservation' className='link'>Réservation</Link></h2>
+                        <h2><Link to='/reservation' className='link titre'>Réservation</Link></h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_bleu h-100'>
@@ -38,7 +38,7 @@ function Home(){
                     </center>
                     <div>
                         <span>03</span>
-                        <h2><Link to='/menu' className='link'>Menu</Link></h2>
+                        <h2><Link to='/menu' className='link titre'>Menu</Link></h2>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_gris h-100'>
@@ -47,7 +47,7 @@ function Home(){
                     </center>
                     <div>
                         <span>04</span>
-                        <h2><Link to='/boisson' className='link'>Boissons</Link></h2>
+                        <h2><Link to='/boisson' className='link titre'>Boissons</Link></h2>
                     </div>
                 </SwiperSlide>
             </Swiper>

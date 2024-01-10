@@ -21,7 +21,7 @@ function Header(){
 
     return(
         <header className={`header row w-100 justify-content-space-be ${scrolling ? '' : 'scrolling'}`}>
-            <h3><Link to='/' className="link">Le Végétal</Link></h3>
+            <h3><Link to='/' className="link titre">Le Végétal</Link></h3>
 
             <ul className="row">
                 <li><Link to='/accueil' className="link">Accueil</Link></li>
