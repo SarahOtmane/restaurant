@@ -4,11 +4,17 @@
     1:= Les fonts
     2:= Constantes
     3:= Global css
-    34:= Global classes
+    4:= Global classes
     5:= Header
     6:= Home
+    7:= .section1
+    8:= Accueil
+    9:= Footer
 
 */
+
+/* notation : .main_classe .section_classe .element_classe */
+
 
 /* ----------- 1:= Fonts ----------- */
 @font-face {
@@ -35,12 +41,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /* ----------- 2:= Constantes ----------- */
 :root{
     --noir : #212121;
     --vert : #68756b;
     --bleu : #526774;
-    --jaune : #bfbdb1;
+    --gris : #bfbdb1;
+    --beige: #fae8da;
 }
 
 
@@ -51,13 +67,21 @@
     font-family: 'grotesque_mt', sans-serif;
 }
 
-main, .h-100{
-    min-height: 100vh;
+main{
+    color: white;
 }
 
 ul{
     list-style-type: none;
 }
+
+
+
+
+
+
+
+
 
 /* ----------- 4:= Global classes ----------- */
 .row{
@@ -75,6 +99,10 @@ ul{
     width: 100%;
 }
 
+.h-100{
+    min-height: 100vh;
+}
+
 .w-max-c{
     width: max-content;
 }
@@ -87,15 +115,47 @@ ul{
     text-decoration: none;
 }
 
+.back_noir{
+    background-color: var(--noir);
+}
+
+.back_vert{
+    background-color: var(--vert);
+}
+
+.back_bleu{
+    background-color: var(--bleu);
+}
+
+.back_gris{
+    background-color: var(--gris);
+}
+
+.justify-content-space-be{
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
 /* ----------- 5:= Header ----------- */
 .header{
     position: fixed;
-    justify-content: space-between;
     border-bottom: .5px solid white;
     height: max-content;
     padding: 1.5rem 0;
 
     z-index: 100;
+}
+
+.header.scrolling{
+    background-color: black;
 }
 
 .header .link, .slide .link{
@@ -117,25 +177,14 @@ ul{
     margin-left: 2rem;
 }
 
+
+
+
+
+
 /* ----------- 6:= Home ----------- */
 .slide{
     max-height: 100vh;
-}
-
-.slide-1{
-    background-color: var(--noir);
-}
-
-.slide-2{
-    background-color: var(--vert);
-}
-
-.slide-3{
-    background-color: var(--bleu);
-}
-
-.slide-4{
-    background-color: var(--jaune);
 }
 
 .slide img{
@@ -158,4 +207,182 @@ ul{
 .slide h2{
     font-size: 8rem;
     margin-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+/* ----------- 7:= .section1 ----------- */
+main .section1 img{
+    width: 90rem;
+    margin-top: -2rem;
+}
+
+main .section1 article{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+}
+
+main .section1 span{
+    font-size: 1.5rem;
+}
+
+main .section1 h1{
+    font-size: 8rem;
+}
+
+
+
+
+
+
+
+/* ----------- 8:= Accueil ----------- */
+.accueil h2{
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.accueil .description .gauche, .accueil .horaires article, 
+.accueil .paiement .droite, .accueil .aboutUs img,
+footer .gauche{
+    padding-left: 15rem;
+}
+
+.accueil .description .droite, .accueil .horaires img, 
+.accueil .paiement .gauche, .accueil .aboutUs article,
+footer .droite{
+    padding-right: 15rem;
+}
+
+.accueil hr{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/* section2 : description */
+.accueil .description article{
+    width: 50%;
+    padding: 0 5rem;
+    font-size: 1.5rem;
+}
+
+.accueil .description article p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+/* section3 : horaires */
+.accueil .horaires h2{
+    margin-top: 0;
+    margin-bottom: 7rem;
+}
+
+.accueil .horaires article, .accueil .horaires img,
+.accueil .aboutUs article{
+    width: 45%;
+}
+
+
+.accueil .horaires img{
+    height: 40rem;
+}
+
+.accueil .horaires .joursOuv, .accueil .horaires p{
+    padding-right: 6rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.accueil .horaires span:first-child{
+    font-weight: bold;
+}
+
+.accueil div.icon{
+    margin-top: 6rem;
+    padding-right: 6rem;
+    font-size: 1.4rem;
+}
+.accueil div.icon .icon{
+    margin-right: .5rem;
+}
+
+/* section4 et section6 : paiement */
+.accueil .paiement .icon{
+    font-size: 3rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* section5 : aboutUs */
+.accueil .aboutUs img{
+    width: 36%;
+}
+
+.accueil .aboutUs h2{
+    margin: 1rem 0;
+}
+
+.accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span{
+    margin-left: 5rem;
+}
+
+.accueil .aboutUs span{
+    font-size: 2rem;
+}
+
+.accueil .aboutUs p{
+    margin-top: 3rem;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+
+/* section7 : galerie */
+.accueil .galerie{
+    padding: 0 15rem;
+    padding-bottom: 10rem;
+}
+
+.accueil .galerie figure{
+    width: 32%;
+    align-self: center;
+}
+
+.accueil .galerie img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1.5rem;
+}
+
+.accueil .galerie .imgMargin{
+    margin-top: 7rem;
+}
+
+.accueil .galerie .imgMargin2{
+    margin-top: 1rem;
+}
+
+
+
+
+
+/* ----------- 9:= Footer ----------- */
+footer{
+    background-color: var(--beige);
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+footer li, footer div{
+    margin: 1rem 0;
 }
