@@ -11,6 +11,7 @@
     8:= Accueil
     9:= Footer
     10:= Reservation
+    11:= Menu
 
 */
 
@@ -78,6 +79,8 @@ ul{
 
 h1, h2, h3, h4, .titre{
     font-family: 'grand hotel', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 hr{
@@ -87,13 +90,13 @@ hr{
 
 .accueil .description .gauche, .accueil .horaires article, 
 .accueil .paiement .droite, .accueil .aboutUs img,
-footer .gauche{
+footer .gauche, .menu .concept .gauche{
     padding-left: 15rem;
 }
 
 .accueil .description .droite, .accueil .horaires img, 
 .accueil .paiement .gauche, .accueil .aboutUs article,
-footer .droite{
+footer .droite, .menu .concept .droite{
     padding-right: 15rem;
 }
 
@@ -152,6 +155,10 @@ footer .droite{
 
 .justify-content-space-be{
     justify-content: space-between;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 
@@ -271,20 +278,20 @@ main .section1 h1{
 
 
 /* ----------- 8:= Accueil ----------- */
-.accueil h2{
-    font-size: 3rem;
+.accueil h2, .menu h2{
+    font-size: 4rem;
     margin-top: 5rem;
     margin-bottom: 4rem;
 }
 
 /* section2 : description */
-.accueil .description article{
+.accueil .description article, .menu .concept article{
     width: 50%;
     padding: 0 5rem;
     font-size: 1.5rem;
 }
 
-.accueil .description article p{
+.accueil .description article p, .menu .concept article p{
     margin-bottom: 2rem;
     text-align: justify;
 }
@@ -442,4 +449,31 @@ footer li, footer div{
     color: var(--noir);
     font-weight: bold;
 }
+
+
+
+
+
+/* ----------- 11:= Menu ----------- */
+/* section3 : formule */
+.menu .formules article{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.menu .formules span, .menu .formules p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.menu .formules .deco{
+    margin-bottom: 1rem;
+}
+
+.menu .formules h3, .menu .formules span{
+    font-family: 'grotesque_mt', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
 
