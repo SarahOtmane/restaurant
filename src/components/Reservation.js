@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 import reservation from '../assets/reservation.png';
 import reserv_info from '../assets/reserv_info.jpg';
-import reserv_info1 from '../assets/reserv_info1.jpeg';
+// import reserv_info1 from '../assets/reserv_info1.jpeg';
 
 function Reservation(){
     return(
