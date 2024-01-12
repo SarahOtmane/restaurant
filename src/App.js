@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Animation from './components/Animation';
-import Header from './components/Header';
 import Home from './components/Home';
 import Reservation from './components/Reservation';
 import Menu from './components/Menu';
@@ -14,7 +13,6 @@ function App(){
     return(
         <BrowserRouter>
             <>  
-                <Header />
                 <Animation />
                 <Routes>
                     <Route path='/' element={<Home />} />

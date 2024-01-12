@@ -1,3 +1,4 @@
+import Header from './Header';
 import Footer from './Footer';
 
 import menu from '../assets/menu.png';
@@ -5,6 +6,8 @@ import menu from '../assets/menu.png';
 function Menu(){
     return(
         <>
+            <Header color='back_bleu' />
+
             <main className="menu back_bleu h-100">
                 <section className='section1 w-100'>
                     <center>
@@ -73,7 +76,7 @@ function Menu(){
                 </section>
             </main>
 
-            <Footer />
+            <Footer color='back_bleu' />
         </>
     )
 }

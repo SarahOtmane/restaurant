@@ -19,11 +19,14 @@ import { IoBag } from "react-icons/io5";
 // import { TbAirConditioning } from "react-icons/tb";
 // import { GrWifi } from "react-icons/gr";
 
+import Header from './Header';
 import Footer from './Footer';
 
 function Accueil(){
     return(
         <>
+            <Header color='back_noir' />
+
             <main className="accueil back_noir h-100">
                 <section className='section1 w-100'>
                     <center>
@@ -192,7 +195,7 @@ function Accueil(){
                     </div>
                 </section>
             </main>
-            <Footer />
+            <Footer color='back_noir'/>
         </>
     )
 }

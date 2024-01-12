@@ -2,11 +2,14 @@ import Footer from "./Footer";
 
 import reservation from '../assets/reservation.png';
 import reserv_info from '../assets/reserv_info.jpg';
+import Header from "./Header";
 // import reserv_info1 from '../assets/reserv_info1.jpeg';
 
 function Reservation(){
     return(
-        <>
+        <>  
+            <Header color='back_vert' />
+            
             <main className="reservation h-100 back_vert">
                 <section className='section1 w-100'>
                     <center>
@@ -28,7 +31,7 @@ function Reservation(){
                     </article>
                 </section>
             </main>
-            <Footer />
+            <Footer color='back_vert' />
         </>
     )
 }

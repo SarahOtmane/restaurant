@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
+import Header from './Header';
 import accueil from '../assets/accueil.png';
 import reservation from '../assets/reservation.png';
 import menu from '../assets/menu.png';
@@ -12,6 +13,8 @@ import menu from '../assets/menu.png';
 function Home(){
 
     return(
+        <>
+        <Header color='' />
         <main className="home">
             <Swiper pagination={{type: 'progressbar',}} navigation={true} modules={[Pagination, Navigation]} className='swiper h-100' >
                 <SwiperSlide className='slide back_noir h-100'>
@@ -47,11 +50,12 @@ function Home(){
                     </center>
                     <div>
                         <span>04</span>
-                        <h2><Link to='/boisson' className='link titre'>Boissons</Link></h2>
+                        <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
                     </div>
                 </SwiperSlide>
             </Swiper>
         </main>
+        </>
     )
 }
 
