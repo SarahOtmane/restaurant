@@ -12,6 +12,8 @@
     9:= Footer
     10:= Reservation
     11:= Menu
+    12:= Vins
+    13:= Version mobile
 
 */
 
@@ -557,5 +559,21 @@ footer .popup.donnee p{
     font-style: normal;
     font-size: 2.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+/* ----------- 12:= Vins ----------- */
+
+
+
+
+
 
 
