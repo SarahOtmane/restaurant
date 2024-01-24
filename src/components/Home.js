@@ -21,37 +21,25 @@ function Home(){
                     <center>
                         <img src={accueil} alt='' />
                     </center>
-                    <div>
-                        <span>01</span>
                         <h2><Link to='/accueil' className='link titre'>Le Végétal</Link></h2>
-                    </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_vert h-100'>
                     <center>
                         <img src={reservation} alt='' />
                     </center>
-                    <div>
-                        <span>02</span>
                         <h2><Link to='/reservation' className='link titre'>Réservation</Link></h2>
-                    </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_bleu h-100'>
                     <center>
                         <img src={menu} alt='' />
                     </center>
-                    <div>
-                        <span>03</span>
                         <h2><Link to='/menu' className='link titre'>Menu</Link></h2>
-                    </div>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_gris h-100'>
                     <center>
                         <img src={accueil} alt='' />
                     </center>
-                    <div>
-                        <span>04</span>
                         <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
-                    </div>
                 </SwiperSlide>
             </Swiper>
         </main>
