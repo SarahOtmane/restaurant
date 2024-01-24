@@ -220,21 +220,13 @@ footer .droite, .menu .concept .droite{
     margin-top: -2rem;
 }
 
-.slide div{
-    position: absolute;
-    color: white;
-    top: 40%;
-    left: 20%;
-}
-
-.slide span{
-    font-size: 2rem;
-    margin-left: 2rem;
-}
 
 .slide h2{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
     font-size: 9rem;
-    margin-top: 4rem;
 }
 
 
@@ -577,3 +569,128 @@ footer .popup.donnee p{
 
 
 
+
+/* ----------- 13:= Mobile ----------- */
+@media screen and (max-width: 576px) {
+    .header ul{
+        flex-direction: column!important;
+        font-size: 1rem;
+    }
+
+    .slide img{
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 30%;
+    }
+    .slide h2{
+        font-size: 5rem;
+        top: 60%;
+        left: 10%;
+    }
+
+    main .section1 img{
+        width: 40rem;
+        margin-left: -5%;
+        margin-top: 5rem;
+    }
+
+    main .section1 article{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+
+    main .section1 h1{
+        font-size: 5rem;
+    }
+
+    /* .accueil .description .gauche, .accueil .horaires article, 
+    .accueil .paiement .droite, .accueil .aboutUs img,
+    footer .gauche, .menu .concept .gauche{
+        padding-left: 3rem;
+    }
+
+    .accueil .description .droite, .accueil .horaires img, 
+    .accueil .paiement .gauche, .accueil .aboutUs article,
+    footer .droite, .menu .concept .droite{
+        padding-right: 3rem;
+    } */
+
+    .accueil h2, .menu h2{
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .accueil .description div,
+    .accueil .horaires div{
+        flex-direction: column;
+    }
+
+    .accueil .description article,.accueil .horaires article, 
+    .accueil .horaires img, .accueil .aboutUs article,
+    .accueil .aboutUs img{
+        padding: 0 3rem!important;
+    }
+
+
+    .accueil .description article{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .accueil .horaires h2{
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .accueil .horaires article, .accueil .horaires img,
+    .accueil .aboutUs article{
+        width: 90%;
+    }
+
+    .accueil .horaires img{
+        height: 20rem;
+    }
+
+    .accueil .horaires .joursOuv, .accueil .horaires p{
+        padding-right: 0rem !important;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .accueil .paiement div.icon{
+        margin-top: 2rem;
+        padding-right: 6rem;
+        font-size: 1.4rem;
+    }
+
+    .accueil .paiement article{
+        margin-bottom: 2rem;
+    }
+
+    .accueil .paiement div .icon{
+        margin-left: 10% !important;
+    }
+
+    .accueil .paiement div{
+        flex-wrap: wrap;
+    }
+
+    .accueil .paiement article{
+        padding: 0!important;
+        width: 30%;
+    }
+
+    .accueil .aboutUs div{
+        flex-direction: column;
+    }
+
+    .accueil .aboutUs img{
+        width: 90%;
+    } 
+
+    .accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span{
+        margin-left: 1rem;
+    }  
+}
