@@ -1,6 +1,6 @@
 import accueil from '../assets/accueil.png';
 import accueil_horaires from '../assets/accueil_horaires.jpeg';
-import accueil_aboutUs from '../assets/accueil_aboutUs.jpeg';
+import accueil_aboutUs from '../assets/accueil_about.jpg';
 import accueil_galerie_1 from '../assets/accueil_galerie_1.jpeg';
 import accueil_galerie_2 from '../assets/accueil_galerie_2.jpeg';
 import accueil_galerie_3 from '../assets/accueil_galerie_3.jpeg';
@@ -30,7 +30,7 @@ function Accueil(){
             <main className="accueil back_noir h-100">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={accueil} className='imgTest' alt='' />
                     </center>
                     <article>
                         <span>Découvrez notre restaurant</span>

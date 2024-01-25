@@ -12,7 +12,7 @@ function Boisson(){
             <main  className="boisson back_noir h-100">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={accueil} className='imgTest' alt='' />
                     </center>
                     <article>
                         <span>Jetez un coup d'oeil sur notre</span>

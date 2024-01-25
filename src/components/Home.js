@@ -19,7 +19,7 @@ function Home(){
             <Swiper pagination={{type: 'progressbar',}} navigation={true} modules={[Pagination, Navigation]} className='swiper h-100' >
                 <SwiperSlide className='slide back_noir h-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={accueil} className='imgTest' alt='' />
                     </center>
                         <h2><Link to='/accueil' className='link titre'>Le Végétal</Link></h2>
                 </SwiperSlide>
@@ -31,13 +31,13 @@ function Home(){
                 </SwiperSlide>
                 <SwiperSlide className='slide back_bleu h-100'>
                     <center>
-                        <img src={menu} alt='' />
+                        <img src={menu} className='imgTest' alt='' />
                     </center>
                         <h2><Link to='/menu' className='link titre'>Menu</Link></h2>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_gris h-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={accueil} className='imgTest' alt='' />
                     </center>
                         <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
                 </SwiperSlide>

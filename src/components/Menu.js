@@ -11,7 +11,7 @@ function Menu(){
             <main className="menu back_bleu h-100">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={menu} alt='' />
+                        <img src={menu} className='imgTest menu' alt='' />
                     </center>
                     <article>
                         <span>Jetez un coup d'oeil sur notre</span>
