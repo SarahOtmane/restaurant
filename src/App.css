@@ -268,10 +268,9 @@ main .section1 h1{
 
 
 /* ----------- 8:= Accueil ----------- */
-.accueil h2, .menu h2{
+.accueil h2, .menu h2, .reservation h2, .boisson h2{
     font-size: 4rem;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    margin: 5rem auto 4rem;
 }
 
 /* section2 : description */
@@ -508,8 +507,6 @@ footer .popup.donnee p{
 
 .reservation h2{
     font-size: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
 }
 
 .reservation .info article{
@@ -537,15 +534,14 @@ footer .popup.donnee p{
     padding-bottom: 5rem;
 }
 
-.menu .formules span, .menu .formules p{
+.menu .formules span, .menu .formules p,
+.boisson .champagne span, .boisson .champagne p,
+.boisson .vin span, .boisson .vin p, .boisson .autre span, .boisson .autre p{
     font-size: 1.4rem;
-    margin-top: 1rem;
-}
-.menu .formules .deco{
-    margin-bottom: 1rem;
+    margin: .5rem 0;
 }
 
-.menu .formules h3, .menu .formules span{
+.menu .formules h3, .menu .formules span, .boisson .champagne h4, .boisson .vin h4,  .boisson .autre h4{
     font-family: 'grotesque_mt', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -562,8 +558,67 @@ footer .popup.donnee p{
 
 
 /* ----------- 12:= Vins ----------- */
+.boisson .list{
+    padding: 0 15rem;
+    margin: 3rem 0;
+}
+
+.boisson .list .link{
+    background-color: var(--beige);
+    font-size: 2rem;
+    color: var(--noir);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+/* section2 : cartes champagnes */
+.boisson .champagne h2, .boisson .vin h2, .boisson .autre h2{
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+
+.boisson .champagne h2 + center span, .boisson .vin h2 + center span, .boisson .autre h2 + center span{
+    font-size: 5rem;
+}
 
 
+.boisson .champagne div,
+.boisson .vin{
+    padding: 0 15rem;
+}
+
+.boisson .champagne section,
+.boisson .vin div{
+    width: 50%;
+    text-align: center;
+}
+
+.boisson .champagne h3, .boisson .vin h3, .boisson .autre h3{
+    font-size: 4rem;
+    font-weight: lighter;
+    color: var(--beige);
+}
+
+.boisson .champagne h4, .boisson .vin h4, .boisson .autre h4{
+    font-size: 1.8rem;
+    margin: 3rem 0 1rem;
+}
+
+.boisson .champagne span + article, .boisson .autre span + article, .boisson .autre span + article{
+    margin-top: 4rem;
+}
+
+
+/* section3 : cartes des Vins */
+.boisson .vin h3,  .boisson .autre h3{
+    margin-top: 5rem;
+}
+
+/* section4 : autres breuvages */
+.boisson .autre{
+    text-align: center;
+    padding-bottom: 5rem;
+}
 
 
 
