@@ -31,7 +31,7 @@ function Home(){
                 </SwiperSlide>
                 <SwiperSlide className='slide back_bleu h-100'>
                     <center>
-                        <img src={menu} className='imgTest' alt='' />
+                        <img src={menu} className='imgTest menu' alt='' />
                     </center>
                         <h2><Link to='/menu' className='link titre'>Menu</Link></h2>
                 </SwiperSlide>

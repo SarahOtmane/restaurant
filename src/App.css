@@ -221,7 +221,7 @@ footer .droite, .menu .concept .droite{
 }
 
 .slide .imgTest{
-    width: 40% !important;
+    width: 40%;
 }
 
 .slide h2{
@@ -296,8 +296,7 @@ main .section1 h1{
 
 /* section3 : horaires */
 .accueil .horaires h2{
-    margin-top: 0;
-    margin-bottom: 7rem;
+    margin: 0 auto 7rem;
 }
 
 .accueil .horaires article, .accueil .horaires img,
@@ -445,7 +444,7 @@ footer .popup {
     transform: translate(-50%, -50%);
     width: 50%;
     max-width: 60rem;
-    min-width: 20rem;
+    min-width: 10rem;
     min-height: 60vh;
     max-height: 65vh;
     color: white;
@@ -520,10 +519,6 @@ footer .popup.donnee p{
 .reservation .info article{
     font-size: 1.8rem;
     padding-bottom: 10rem;
-}
-
-.reservation .info p:first-child{
-    margin-bottom: 1rem;
 }
 
 .reservation .info .link{
@@ -645,26 +640,50 @@ footer .popup.donnee p{
         margin-left: -25%;
         margin-top: 30%;
     }
+
+    .slide .imgTest{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .slide .imgTest.menu{
+        margin-top: 35%;
+    }
+
     .slide h2{
-        font-size: 5rem;
+        font-size: 4rem;
         top: 60%;
         left: 10%;
     }
 
     main .section1 img{
-        width: 40rem;
+        width: 25rem;
         margin-left: -5%;
+        margin-top: 5rem;
+    }
+
+    main .section1 img.imgTest{
+        width: 15rem;
+        margin-left: -2%;
+        margin-top: 3rem;
+    }
+
+    main .section1 img.imgTest.menu{
         margin-top: 5rem;
     }
 
     main .section1 article{
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 10%;
     }
 
+    main .section1 span{
+        font-size: 1rem;
+    }
+
     main .section1 h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     /* .accueil .description .gauche, .accueil .horaires article, 
@@ -679,10 +698,11 @@ footer .popup.donnee p{
         padding-right: 3rem;
     } */
 
-    .accueil h2, .menu h2{
-        font-size: 3rem;
-        margin-top: 5rem;
-        margin-bottom: 4rem;
+    .accueil h2, .menu h2, .reservation h2{
+        font-size: 2.5rem;
+        text-align: center;
+        width: inherit;
+        margin-left: 0 !important;
     }
 
     .accueil .description div,
@@ -690,20 +710,23 @@ footer .popup.donnee p{
         flex-direction: column;
     }
 
-    .accueil .description article,.accueil .horaires article, 
+    .accueil h2, .menu h2,.reservation h2,
+    .accueil .description article, .accueil .description .gauche, .accueil .horaires article, 
     .accueil .horaires img, .accueil .aboutUs article,
-    .accueil .aboutUs img{
-        padding: 0 3rem!important;
+    .accueil .aboutUs img, .accueil .paiement div,
+    .accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span,
+    footer .gauche, footer .droite,
+    .reservation .info article{
+        padding: 0 5%;
     }
 
 
     .accueil .description article{
         width: 90%;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .accueil .horaires h2{
-        margin-top: 0;
         margin-bottom: 3rem;
     }
 
@@ -714,34 +737,32 @@ footer .popup.donnee p{
 
     .accueil .horaires img{
         height: 20rem;
+        padding-left: 5%;
     }
 
     .accueil .horaires .joursOuv, .accueil .horaires p{
         padding-right: 0rem !important;
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: center;
     }
 
     .accueil .paiement div.icon{
         margin-top: 2rem;
-        padding-right: 6rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .accueil .paiement article{
         margin-bottom: 2rem;
     }
 
-    .accueil .paiement div .icon{
-        margin-left: 10% !important;
-    }
-
     .accueil .paiement div{
         flex-wrap: wrap;
+        width: 90%;
     }
 
     .accueil .paiement article{
         padding: 0!important;
+        margin-bottom: 2rem;
         width: 30%;
     }
 
@@ -751,9 +772,87 @@ footer .popup.donnee p{
 
     .accueil .aboutUs img{
         width: 90%;
+        padding-left: 5%;
     } 
 
-    .accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span{
-        margin-left: 1rem;
-    }  
+    .accueil .aboutUs p, .accueil .aboutUs span{
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .accueil .service div{
+        text-align: center;
+    }
+
+    .accueil .service div article{
+        width: 50%;
+    }
+
+    .accueil .service .icon{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+    
+    .accueil .service .icon + span{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .accueil .galerie{
+        padding: 0;
+    }
+
+    .accueil .galerie div{
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .accueil .galerie figure{
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .accueil .galerie figure:nth-child(2) img{
+        width: 33%;
+        height: 7rem;
+    }
+
+    .accueil .galerie img{
+        width: 45%;
+        height: 10rem;
+        border-radius: 1.5rem;
+    }
+
+    .accueil .galerie .imgMargin{
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+    footer{
+        flex-direction: column!important;
+    }
+
+    footer, footer li button{
+        font-size: 1rem;
+    }
+
+    .reservation .section1 h1{
+        font-size: 3rem;
+    }
+
+    .reservation .info img{
+        width: 90%;
+        height: 20rem;
+        border-radius: 2rem;
+    }
+
+    .reservation .info article{
+        font-size: 1rem;
+    }
+
+    .reservation .info article p{
+        width: 100%;
+        text-align: center;
+    }
+ 
 }
