@@ -698,7 +698,8 @@ footer .popup.donnee p{
         padding-right: 3rem;
     } */
 
-    .accueil h2, .menu h2, .reservation h2{
+    .accueil h2, .menu h2, .reservation h2, .boisson .champagne h2, 
+    .boisson .vin h2, .boisson .autre h2{
         font-size: 2.5rem;
         text-align: center;
         width: inherit;
@@ -711,12 +712,13 @@ footer .popup.donnee p{
     }
 
     .accueil h2, .menu h2,.reservation h2,
-    .accueil .description article, .accueil .description .gauche, .accueil .horaires article, 
+    .accueil .description article, .accueil .description .gauche, .accueil .description .droite, .accueil .horaires article, 
     .accueil .horaires img, .accueil .aboutUs article,
     .accueil .aboutUs img, .accueil .paiement div,
     .accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span,
-    footer .gauche, footer .droite,
-    .reservation .info article{
+    footer .gauche, footer .droite, .reservation .info article,
+    .menu .concept article p, .boisson .list, .boisson .champagne div,
+    .boisson .vin{
         padding: 0 5%;
     }
 
@@ -853,6 +855,75 @@ footer .popup.donnee p{
     .reservation .info article p{
         width: 100%;
         text-align: center;
+    }
+
+    .menu .concept div{
+        flex-direction: column;
+    }
+
+    .menu .concept .gauche, .menu .concept .droite{
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .menu .formules span, .menu .formules p,
+    .boisson .champagne span, .boisson .champagne p,
+    .boisson .vin span, .boisson .vin p, .boisson .autre span, .boisson .autre p{
+        font-size: 1rem;
+    }
+
+    .menu .formules h3, .menu .formules span, .boisson .champagne h4, .boisson .vin h4,  .boisson .autre h4{
+        font-size: 1.5rem;
+    }
+
+    .boisson .list{
+        flex-wrap: wrap;
+    }
+
+    .boisson .list li{
+        width: 50%;
+        margin-bottom: 2.5rem;
+    }
+
+    .boisson .list .link{
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .boisson hr{
+        margin-bottom: 0rem;
+    }
+
+    .boisson .champagne h2 + center span, .boisson .vin h2 + center span, 
+    .boisson .autre h2 + center span{
+        font-size: 2rem;
+    }
+
+    .boisson .champagne div, .boisson .vin{
+        flex-direction: column;
+    }
+
+    .boisson .champagne section, .boisson .vin div{
+        width: 100%;
+    }
+
+    .boisson .champagne h3, .boisson .vin h3, .boisson .autre h3{
+        font-size: 2rem;
+    }
+
+    .boisson .champagne h4, .boisson .vin h4, .boisson .autre h4{
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+
+    .boisson .champagne span + article, .boisson .autre span + article, .boisson .autre span + article{
+        margin-top: 2rem;
+    }
+
+    .boisson .vin h3,  .boisson .autre h3{
+        margin-top: 1rem;
     }
  
 }
