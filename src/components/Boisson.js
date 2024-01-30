@@ -3,7 +3,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-import accueil from '../assets/accueil.png';
+import accueil from '../assets/acceuil.png';
 
 function Boisson(){
     return(
@@ -12,7 +12,7 @@ function Boisson(){
             <main  className="boisson back_noir h-100">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={accueil} className='imgTest' alt='' />
+                        <img src={accueil} alt='' />
                     </center>
                     <article>
                         <span>Jetez un coup d'oeil sur notre</span>
@@ -24,12 +24,12 @@ function Boisson(){
                     <li><a className='link' href='#Champagne' >Champagnes</a></li>
                     <li><a className='link' href='#Blancs' >Vins Blancs</a></li>
                     <li><a className='link' href='#Rouges' >Vins Rouges</a></li>
-                    <li><a className='link' href='#Autre' >Autre Brevages</a></li>
+                    <li><a className='link' href='#Autre' >Autres Brevages</a></li>
                 </ul>
 
                 <section className='champagne' id='Champagne'>
                     <h2 className='w-max-c m-auto'> Nos champagnes</h2>
-                    <center><span className='titre'>75cl</span></center>
+                    <center><span>75cl</span></center>
                     <div className='row'>
                         <section>
                             <h3 className='underline'>La Champagne</h3>
@@ -72,7 +72,7 @@ function Boisson(){
                 <section className='vin row'>
                     <div id='Blancs'>
                         <h2>Nos Vins Blancs</h2>
-                        <center><span className='titre'>75cl</span></center>
+                        <center><span>75cl</span></center>
                         <h3 className='underline'>L'Alsace</h3>
                         <article>
                             <h4 className='underline'>Domaine Marcel Deiss</h4>
@@ -123,7 +123,7 @@ function Boisson(){
                     </div>
                     <div id='Rouges'>
                         <h2>Nos Vins Rouges</h2>
-                        <center><span className='titre'>75cl</span></center>
+                        <center><span>75cl</span></center>
                         <h3 className='underline'>Le Sud-Ouest</h3>
                         <article>
                             <h4 className='underline'>Elian Da Ros</h4>

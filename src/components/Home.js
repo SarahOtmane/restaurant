@@ -6,9 +6,9 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 import Header from './Header';
-import accueil from '../assets/accueil.png';
-import reservation from '../assets/reservation.png';
-import menu from '../assets/menu.png';
+import accueil from '../assets/acceuil.png';
+import reservation from '../assets/acceuil.png';
+import menu from '../assets/acceuil.png';
 
 function Home(){
 
@@ -19,7 +19,7 @@ function Home(){
             <Swiper pagination={{type: 'progressbar',}} navigation={true} modules={[Pagination, Navigation]} className='swiper h-100' >
                 <SwiperSlide className='slide back_noir h-100'>
                     <center>
-                        <img src={accueil} className='imgTest' alt='' />
+                        <img src={accueil} alt='' />
                     </center>
                         <h2><Link to='/accueil' className='link titre'>Le Végétal</Link></h2>
                 </SwiperSlide>
@@ -37,7 +37,7 @@ function Home(){
                 </SwiperSlide>
                 <SwiperSlide className='slide back_gris h-100'>
                     <center>
-                        <img src={accueil} className='imgTest' alt='' />
+                        <img src={accueil} alt='' />
                     </center>
                         <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
                 </SwiperSlide>

@@ -1,4 +1,4 @@
-import accueil from '../assets/accueil.png';
+import accueil from '../assets/acceuil.png';
 import accueil_horaires from '../assets/accueil_horaires.jpeg';
 import accueil_aboutUs from '../assets/accueil_about.jpg';
 import accueil_galerie_1 from '../assets/accueil_galerie_1.jpeg';
@@ -30,7 +30,7 @@ function Accueil(){
             <main className="accueil back_noir h-100">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={accueil} className='imgTest' alt='' />
+                        <img src={accueil} alt='' />
                     </center>
                     <article>
                         <span>Découvrez notre restaurant</span>
@@ -43,23 +43,21 @@ function Accueil(){
                     <div className='row w-100'>
                         <article className='gauche'>
                             <p>
-                                Bienvenue chez Le Végétal, l'endroit idéal pour une expérience gastronomique inoubliable ! 
-                                Si vous cherchez le lieu parfait pour un repas délicieux et une soirée mémorable, vous êtes au bon endroit. 
-                                Au cœur de notre restaurant, découvrez une diversité de plats exquis que vous pourrez savourer dans une atmosphère chaleureuse et conviviale.
-                            </p>
-                            <p>
-                                Nous sommes ouverts du mardi au samedi, et nous vous invitons à venir nous rendre visite à tout moment. 
-                                Chez Le Végétal, chaque repas est une célébration de la bonne cuisine et de la convivialité.
+                                Bienvenue dans notre restaurant &#171; Le Végétal &#187; . <br></br> <br></br> L'endroit idéal pour une expérience gastronomique inoubliable ! 
+                                <br></br><br></br>
+                                Le concept : pas de carte.
+                                <br></br><br></br>
+                                Une formule en 5 actes, à travers les fruits et les légumes, où vous pouvez toujours ajouter de la viande et/ou du poisson avec l’option Carné.
                             </p>
                         </article>
                         <article className='droite'>
                             <p>
-                                Un lieu de prédilection pour le déjeuner - Laissez-vous séduire par notre cuisine délicieuse et notre sélection rafraîchissante de boissons. 
-                                Que ce soit pour un déjeuner gourmand ou un dîner exquis, nous mettons à votre disposition une connexion Wi-Fi gratuite pour rester connecté pendant votre repas.
+                                Nous vous invitons à vous laisser guider par les idées et les envies du chef au gré des produits de saison.
+                                <br></br><br></br>
+                                Une diversité de plats exquis que vous pourrez savourer dans une atmosphère chaleureuse et conviviale. 
                             </p>
                             <p>
-                                Profitez de douces soirées sur notre terrasse élégante et accueillante, où chaque moment devient une expérience gastronomique exceptionnelle. 
-                                Peu importe la météo, nos salles climatisées vous assurent un confort optimal à tout moment.
+                                Profitez de douces soirées sur notre terrasse élégante et accueillante.
                             </p>
                         </article>
                     </div>
@@ -129,14 +127,20 @@ function Accueil(){
                     <div className='w-100 row'>
                         <img src={accueil_aboutUs} alt='' />
                         <article>
-                            <h2>À propos du Végétal :</h2>
-                            <span>Depuis 2023</span>
+                            <h2>À propos du Végétal:</h2>
+                            <span>Depuis 2023.<br></br> Une expérience de plus de 20 ans !</span>
                             <p>
-                            Le Maxime, un restaurant établi depuis 1989, occupe une place privilégiée au cœur historique de Troyes, niché dans un charmant immeuble à colombages du 17ème siècle, à proximité de l'église Saint-Jean-au-Marché sur la place du marché au pain.
-                            <br></br> <br></br>
-                            En quête de qualité, Le Maxime privilégie les producteurs locaux, mettant en avant les produits de l'agriculture biologique. Nos principaux fournisseurs sont situés dans l'Aube, avec un artisan cidrier dans la forêt d'Othe, un producteur de légumes à Fouchères, un vigneron indépendant pour le Champagne à Villenauxe la Grande, et Le Moulin St Martin pour toutes nos bières artisanales à St Martin de Bossenay.
-                            <br></br> <br></br>
-                            Toute l'équipe du Maxime vous souhaite un moment agréable et gourmand, empreint de notre engagement envers la qualité et l'authenticité.
+                                Le Végétal occupe une place privilégiée au cœur de la ruelle des Chats. 
+                                <br></br><br></br>
+                                Un choix audacieux autour d'un menu mystère qui saura surprendre vos papilles.
+                                <br></br><br></br>
+                                Formule du midi ou du soir avec une option carnée.
+                                <br></br> <br></br>
+                                En quête de qualité, Le Végétal privilégie les producteurs locaux. 
+                                <br></br><br></br>
+                                Nos principaux fournisseurs sont situés dans l'Aube.
+                                <br></br> <br></br>
+                                Toute l'équipe du Végétal vous souhaite un moment agréable et gourmand, empreint de notre engagement envers la qualité et l'authenticité.
                             </p>
                         </article>
                     </div>

@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-import menu from '../assets/menu.png';
+import menu from '../assets/acceuil.png';
 
 function Menu(){
     return(

@@ -32,17 +32,28 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'grand hotel';
     src: url('./assets/fonts/grandHotel/grandhotel-regular-webfont.eot'),
          url('./assets/fonts/grandHotel/grandhotel-regular-webfont.eot#efix') format('embedded-opentype'),
          url('./assets/fonts/grandHotel/grandhotel-regular-webfont.woff2') format('woff2'),
          url('./assets/fonts/grandHotel/grandhotel-regular-webfont.woff') format('woff'),
          url('./assets/fonts/grandHotel/grandhotel-regular-webfont.svg#grand_hotelregular')format('svg');
+    font-weight: lighter;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'orangerie';
+    src: url('./assets/fonts/orangerie/orangeriepersonaluseonlyregular-alaxl-webfont.eot');
+    src: url('./assets/fonts/orangerie/orangeriepersonaluseonlyregular-alaxl-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/orangerie/orangeriepersonaluseonlyregular-alaxl-webfont.woff2') format('woff2'),
+         url('./assets/fonts/orangerie/orangeriepersonaluseonlyregular-alaxl-webfont.woff') format('woff'),
+         url('./assets/fonts/orangerie/orangeriepersonaluseonlyregular-alaxl-webfont.svg#orangerie_personal_use_onlyRg') format('svg');
     font-weight: normal;
     font-style: normal;
-}
 
+}
 
 
 
@@ -80,8 +91,9 @@ ul{
 }
 
 h1, h2, h3, h4, .titre{
-    font-family: 'grand hotel', sans-serif;
-    font-weight: lighter;
+    font-family: 'orangerie', sans-serif;
+    font-weight: lighter
+    ;
     font-style: italic;
 }
 
@@ -220,15 +232,11 @@ footer .droite, .menu .concept .droite{
     margin-top: -2rem;
 }
 
-.slide .imgTest{
-    width: 40%;
-}
-
 .slide h2{
     position: absolute;
     color: white;
-    top: 50%;
-    left: 20%;
+    top: 65%;
+    left: 15%;
     font-size: 9rem;
 }
 
@@ -249,14 +257,9 @@ main .section1 img{
     margin-top: -1rem;
 }
 
-main .section1 .imgTest{
-    width: 50rem;
-    margin-top: -3rem;
-}
-
 main .section1 article{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 15%;
 }
 
@@ -580,8 +583,13 @@ footer .popup.donnee p{
     margin-bottom: 0;
 }
 
+.boisson .vin h2{
+    font-size: 4rem;
+}
+
 .boisson .champagne h2 + center span, .boisson .vin h2 + center span, .boisson .autre h2 + center span{
-    font-size: 5rem;
+    font-size: 3rem;
+    font-weight: lighter;
 }
 
 
@@ -608,7 +616,7 @@ footer .popup.donnee p{
 }
 
 .boisson .champagne span + article, .boisson .autre span + article, .boisson .autre span + article{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 
@@ -641,40 +649,21 @@ footer .popup.donnee p{
         margin-top: 30%;
     }
 
-    .slide .imgTest{
-        width: 90%;
-        margin-left: 0;
-        margin-top: 20%;
-    }
-    .slide .imgTest.menu{
-        margin-top: 35%;
-    }
-
     .slide h2{
         font-size: 4rem;
-        top: 60%;
+        top: 70%;
         left: 10%;
     }
 
     main .section1 img{
-        width: 25rem;
-        margin-left: -5%;
-        margin-top: 5rem;
-    }
-
-    main .section1 img.imgTest{
-        width: 15rem;
-        margin-left: -2%;
-        margin-top: 3rem;
-    }
-
-    main .section1 img.imgTest.menu{
+        width: 40rem;
+        margin-left: -10%;
         margin-top: 5rem;
     }
 
     main .section1 article{
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 10%;
     }
 
