@@ -8,8 +8,8 @@ import accueil from '../assets/acceuil.png';
 function Boisson(){
     return(
         <>
-            <Header color='back_noir' />
-            <main  className="boisson back_noir h-100">
+            <Header color='back_gris' />
+            <main  className="boisson back_gris h-100">
                 <section className='section1 w-100'>
                     <center>
                         <img src={accueil} alt='' />
@@ -210,7 +210,7 @@ function Boisson(){
                     </article>
                 </section>
             </main>
-            <Footer color='back_noir' />
+            <Footer color='back_gris' />
         </>
     )
 }

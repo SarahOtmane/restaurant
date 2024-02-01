@@ -13,7 +13,10 @@
     10:= Reservation
     11:= Menu
     12:= Vins
-    13:= Version mobile
+    13:= Restau
+    14:= Version tablette
+    15:= Version tablette and mobile
+    16:= Version mobile
 
 */
 
@@ -237,7 +240,7 @@ footer .droite, .menu .concept .droite{
     color: white;
     top: 65%;
     left: 15%;
-    font-size: 9rem;
+    font-size: 8rem;
 }
 
 
@@ -259,16 +262,18 @@ main .section1 img{
 
 main .section1 article{
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 15%;
 }
 
 main .section1 span{
     font-size: 1.5rem;
+    margin-left: 2rem;
 }
 
 main .section1 h1{
     font-size: 10rem;
+    margin-top: -3rem;
 }
 
 
@@ -299,7 +304,8 @@ main .section1 h1{
 
 /* section3 : horaires */
 .accueil .horaires h2{
-    margin: 0 auto 7rem;
+    margin: 8rem auto 1rem;
+    font-size: 3.5rem;
 }
 
 .accueil .horaires article, .accueil .horaires img,
@@ -312,21 +318,25 @@ main .section1 h1{
     height: 40rem;
 }
 
-.accueil .horaires .joursOuv, .accueil .horaires p{
+.accueil .horaires .joursOuv{
     padding-right: 6rem;
     font-size: 1.5rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
-.accueil .horaires span:first-child{
+.accueil .horaires p:first-child{
     font-weight: bold;
 }
 
+
 .accueil div.icon{
-    margin-top: 6rem;
-    padding-right: 6rem;
+    margin-top: 9rem;
     font-size: 1.4rem;
+    text-align: center;
+    padding-right: 6rem;
 }
+
 .accueil div.icon .icon{
     margin-right: .5rem;
 }
@@ -578,6 +588,10 @@ footer .popup.donnee p{
 }
 
 /* section2 : cartes champagnes */
+.boisson .champagne, .boisson .vin, .boisson .autre{
+    color: var(--noir);
+}
+
 .boisson .champagne h2, .boisson .vin h2, .boisson .autre h2{
     font-size: 6rem;
     margin-bottom: 0;
@@ -607,7 +621,7 @@ footer .popup.donnee p{
 .boisson .champagne h3, .boisson .vin h3, .boisson .autre h3{
     font-size: 4rem;
     font-weight: lighter;
-    color: var(--beige);
+    color: white;
 }
 
 .boisson .champagne h4, .boisson .vin h4, .boisson .autre h4{
@@ -636,35 +650,89 @@ footer .popup.donnee p{
 
 
 
-/* ----------- 13:= Mobile ----------- */
-@media screen and (max-width: 576px) {
+
+
+/* ----------- 13:= Restau ----------- */
+.autresRestau h1{
+    font-size: 8.5rem !important;
+}
+
+.autresRestau .restau{
+    padding: 0 15rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.autresRestau .restau article{
+    width: 20%;
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+}
+
+.autresRestau .restau img{
+    width: 90%;
+    height: 10rem;
+}
+
+.autresRestau .restau h2{
+    font-size: 1.5rem;
+    font-family: 'grotesque_mt', sans-serif;
+}
+
+.autresRestau .restau p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.autresRestau .restau a{
+    color: var(--beige);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------- 14:= Tablette ----------- */
+@media screen and (min-width : 576px) and (max-width: 768px){
+    
+}
+
+
+
+
+
+
+
+
+/* ----------- 15:= Tablette and mobile ----------- */
+@media screen and (max-width: 1260px){
     .header ul{
         flex-direction: column!important;
         font-size: 1rem;
     }
 
     .slide img{
-        width: 150%;
-        margin-left: -25%;
-        margin-top: 30%;
+        width: 95%;
+        margin-left: -10%;
+        margin-top: 0%;
     }
 
     .slide h2{
-        font-size: 4rem;
+        font-size: 8rem;
         top: 70%;
         left: 10%;
     }
 
     main .section1 img{
-        width: 40rem;
-        margin-left: -10%;
-        margin-top: 5rem;
-    }
-
-    main .section1 article{
-        position: absolute;
-        top: 50%;
-        left: 10%;
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 3rem;
     }
 
     main .section1 span{
@@ -675,28 +743,97 @@ footer .popup.donnee p{
         font-size: 4rem;
     }
 
-    /* .accueil .description .gauche, .accueil .horaires article, 
+    .accueil .description .gauche, .accueil .horaires article, 
     .accueil .paiement .droite, .accueil .aboutUs img,
     footer .gauche, .menu .concept .gauche{
-        padding-left: 3rem;
+        padding-left: 4rem;
     }
 
     .accueil .description .droite, .accueil .horaires img, 
     .accueil .paiement .gauche, .accueil .aboutUs article,
     footer .droite, .menu .concept .droite{
-        padding-right: 3rem;
-    } */
+        padding-right: 4rem;
+    }
 
     .accueil h2, .menu h2, .reservation h2, .boisson .champagne h2, 
     .boisson .vin h2, .boisson .autre h2{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         text-align: center;
         width: inherit;
         margin-left: 0 !important;
     }
 
-    .accueil .description div,
+    .accueil .description article, .menu .concept article{
+        padding: 0 3rem;
+    }
+
+    .accueil .horaires h2{
+        margin-bottom: 3rem;
+    }
+
     .accueil .horaires div{
+        flex-direction: column;
+    }
+
+    .accueil .horaires article, .accueil .aboutUs article{
+        width: 90%;
+    }
+
+    .accueil .horaires img{
+        width: 80%;
+        height: 20rem;
+        padding-left: 10%;
+        margin-top: 2rem;
+    }
+
+    .accueil .aboutUs div{
+        flex-direction: column;
+    }
+
+    .accueil .aboutUs img{
+        width: 85%;
+        height: 25rem;
+        padding-left: 4rem;
+    } 
+
+    .accueil .service div{
+        text-align: center;
+    }
+
+    .accueil .service div article{
+        width: 50%;
+    }
+
+    footer{
+        flex-direction: column!important;
+    }
+
+    footer .droite{
+        padding-right: 0;
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+
+
+
+
+
+
+
+
+/* ----------- 16:= Mobile ----------- */
+@media screen and (max-width: 576px) {
+    .accueil h2, .menu h2, .reservation h2, .boisson .champagne h2, 
+    .boisson .vin h2, .boisson .autre h2{
+        font-size: 2.5rem;
+    }
+
+    .accueil .description div{
         flex-direction: column;
     }
 
@@ -717,24 +854,13 @@ footer .popup.donnee p{
         font-size: 1rem;
     }
 
-    .accueil .horaires h2{
-        margin-bottom: 3rem;
-    }
-
     .accueil .horaires article, .accueil .horaires img,
     .accueil .aboutUs article{
         width: 90%;
     }
 
     .accueil .horaires img{
-        height: 20rem;
         padding-left: 5%;
-    }
-
-    .accueil .horaires .joursOuv, .accueil .horaires p{
-        padding-right: 0rem !important;
-        font-size: 1rem;
-        text-align: center;
     }
 
     .accueil .paiement div.icon{
@@ -757,12 +883,7 @@ footer .popup.donnee p{
         width: 30%;
     }
 
-    .accueil .aboutUs div{
-        flex-direction: column;
-    }
-
     .accueil .aboutUs img{
-        width: 90%;
         padding-left: 5%;
     } 
 
@@ -819,12 +940,12 @@ footer .popup.donnee p{
         margin-top: 0;
     }
 
-    footer{
-        flex-direction: column!important;
-    }
-
     footer, footer li button{
         font-size: 1rem;
+    }
+
+    footer .droite{
+        padding-left: 0;
     }
 
     .reservation .section1 h1{

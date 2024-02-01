@@ -41,6 +41,12 @@ function Home(){
                     </center>
                         <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
                 </SwiperSlide>
+                <SwiperSlide className='slide back_vert h-100'>
+                    <center>
+                        <img src={accueil} alt='' />
+                    </center>
+                        <h2><Link to='/boisson' className='link titre'>Nos restaurants</Link></h2>
+                </SwiperSlide>
             </Swiper>
         </main>
         </>

@@ -57,7 +57,7 @@ function Footer({color}){
                                         <br/><br/>
                                     Si vous nous contactez (p. ex. par le biais d’une demande aux coordonnées que nous vous avons fournies), nous ne traiterons que les données personnelles que vous nous aurez fournies et qui sont nécessaires pour traiter votre demande et y répondre.
                                         <br/><br/>
-                                    fin de mener à bien les activités de traitement des données décrites dans la présente Déclaration de protection des données, p. ex. pour l'hébergement et l'entretien de notre site Web, nous faisons appel à des prestataires de service.
+                                    Afin de mener à bien les activités de traitement des données décrites dans la présente Déclaration de protection des données, p. ex. pour l'hébergement et l'entretien de notre site Web, nous faisons appel à des prestataires de service.
                                 </p>
                                 <br/><br/>
                                 <h3>Cookies</h3>
@@ -84,27 +84,26 @@ function Footer({color}){
                                 <p>
                                     Pour faire valoir vos droits en vertu du RGPD, notamment :
                                     <br/><br/>
-                                    le droit à l’information sur le traitement de vos données personnelles et le droit d’obtention d’un exemplaire de vos données (article 15 du GRPD) ;
+                                    - le droit à l’information sur le traitement de vos données personnelles et le droit d’obtention d’un exemplaire de vos données (article 15 du GRPD) ;
                                     <br/><br/>
-                                    le droit à la correction des données erronées et le droit de compléter les données incomplètes (article 16 du RGPD) ;
+                                    - le droit à la correction des données erronées et le droit de compléter les données incomplètes (article 16 du RGPD) ;
                                     <br/><br/>
-                                    le droit à la suppression de vos données personnelles et, en cas de divulgation, notre devoir d’informer les autres parties responsables de la demande de suppression (article 17 du RGPD) ;
+                                    - le droit à la suppression de vos données personnelles et, en cas de divulgation, notre devoir d’informer les autres parties responsables de la demande de suppression (article 17 du RGPD) ;
                                     <br/><br/>
-                                    le droit de limitation du traitement de vos données personnelles (article 18 du RGPD) ;
+                                    - le droit de limitation du traitement de vos données personnelles (article 18 du RGPD) ;
                                     <br/><br/>
-                                    le droit à la portabilité des données, afin que vos données personnelles vous soient remises dans un format structuré, établi et lisible par machine, ainsi que le droit de transférer vos données à une autre personne responsable sans notre intervention (article 20 du RGPD) ;
+                                    - le droit à la portabilité des données, afin que vos données personnelles vous soient remises dans un format structuré, établi et lisible par machine, ainsi que le droit de transférer vos données à une autre personne responsable sans notre intervention (article 20 du RGPD) ;
                                     <br/><br/>
-                                    le droit de révocation d'un consentement émis ; la révocation n'affecte pas la légalité du traitement effectué sur la base du consentement préalable à la révocation (article 7 du RGPD) ; 
+                                    - le droit de révocation d'un consentement émis ; la révocation n'affecte pas la légalité du traitement effectué sur la base du consentement préalable à la révocation (article 7 du RGPD) ; 
                                     <br/><br/>
-                                    le droit de vous opposer au traitement de vos données (article 21 du RGPD),
+                                    l- e droit de vous opposer au traitement de vos données (article 21 du RGPD),
                                     <br/><br/>
-                                    vous pouvez nous contacter à tout moment aux coordonnées indiquées au n° 1. Vous pouvez également porter plainte auprès de l’organisme de supervision compétent si vous considérez que le traitement des données enfreint les dispositions du RGPD (article 77 du RGPD).
+                                    - vous pouvez nous contacter à tout moment aux coordonnées indiquées au n° 1. Vous pouvez également porter plainte auprès de l’organisme de supervision compétent si vous considérez que le traitement des données enfreint les dispositions du RGPD (article 77 du RGPD).
                                 </p>
                             <button name="donnee" onClick={closePopup}>Fermer</button>
                             </section>
                         </div>
                     )}
-                <li><a href="https://lemaxime.eatbu.com/?lang=fr">Restaurant Le Maxime</a></li>
             </ul>
             <article className="droite">
                 <div><FaLocationDot className='icon' /> <span>Vegetal, 9 Ruelle des Chats, 10000 Troyes</span></div>

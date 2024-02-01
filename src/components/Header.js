@@ -27,10 +27,11 @@ function Header(color){
             <h3><Link to='/' className="link titre">Le Végétal</Link></h3>
 
             <ul className="row">
-                <li><Link to='/accueil' className="link">Accueil</Link></li>
+                <li><Link to='/accueil' className="link">Notre concept</Link></li>
                 <li><Link to='/reservation' className="link">Réservation</Link></li>
                 <li><Link to='/menu' className="link">Menu</Link></li>
                 <li><Link to='/boisson' className="link">Carte des vins</Link></li>
+                <li><Link to='/autres-restaurants' className="link">Nos restaurants</Link></li>
             </ul>
         </header>
     )

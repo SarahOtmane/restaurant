@@ -10,8 +10,9 @@ import accueil_galerie_6 from '../assets/accueil_galerie_6.jpeg';
 import accueil_galerie_7 from '../assets/accueil_galerie_7.jpeg';
 
 import { GiCash } from "react-icons/gi";
-import { FaWifi, FaCcMastercard, FaCcVisa, FaMoneyCheckAlt, FaUmbrellaBeach } from "react-icons/fa";
+import { FaWifi, FaCcVisa, FaUmbrellaBeach } from "react-icons/fa";
 import { CiCreditCard2 } from "react-icons/ci";
+import { SiAmericanexpress } from "react-icons/si";
 import { MdAirplaneTicket, MdOutlinePets } from "react-icons/md";
 import { BsTicketDetailed } from "react-icons/bs";
 import { FaLocationDot, FaChampagneGlasses } from "react-icons/fa6";
@@ -43,11 +44,11 @@ function Accueil(){
                     <div className='row w-100'>
                         <article className='gauche'>
                             <p>
-                                Bienvenue dans notre restaurant &#171; Le Végétal &#187; . <br></br> <br></br> L'endroit idéal pour une expérience gastronomique inoubliable ! 
+                                Bienvenue dans notre restaurant &#171;Le Végétal&#187;. <br></br> <br></br> L'endroit idéal pour une expérience gastronomique inoubliable ! 
                                 <br></br><br></br>
                                 Le concept : pas de carte.
                                 <br></br><br></br>
-                                Une formule en 5 actes, à travers les fruits et les légumes, où vous pouvez toujours ajouter de la viande et/ou du poisson avec l’option Carné.
+                                Une formule en 5 actes, à travers les fruits et les légumes, où vous pouvez toujours ajouter de la viande et/ou du poisson avec l’option carné.
                             </p>
                         </article>
                         <article className='droite'>
@@ -69,11 +70,13 @@ function Accueil(){
                     <div className='w-100 row'>
                         <article>
                             <h2>Nos horaires d’ouverture :</h2>
-                            <div className='row joursOuv justify-content-space-be'><span>Mardi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
-                            <div className='row joursOuv justify-content-space-be'><span>Mercredi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
-                            <div className='row joursOuv justify-content-space-be'><span>Jeudi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
-                            <div className='row joursOuv justify-content-space-be'><span>Vendredi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
-                            <div className='row joursOuv justify-content-space-be'><span>Samedi :</span><span>12:00 à 13:30, 19:00 à 21:00</span></div>
+                            <div className='joursOuv justify-content-space-be'>
+                                <p>Mardi au Samedi </p>
+                                <br></br>
+                                <p>12h00 à 13h30</p>
+                                <br></br>
+                                <p>et 19h00 à 21h00</p>
+                            </div>
 
                             <div className='icon'><FaLocationDot className='icon' /> Vegetal, 9 Ruelle des Chats, 10000 Troyes</div>
                         </article>
@@ -84,7 +87,6 @@ function Accueil(){
                 <hr></hr>
 
                 <section className='paiement'>
-                    <h2 className='w-max-c m-auto'>Options de paiement disponible</h2>
                     <div className='row w-100 justify-content-space-be'>
                         <article className='column droite'>
                             <GiCash className='icon'></GiCash>
@@ -95,8 +97,8 @@ function Accueil(){
                             <span>Paiement sans contact</span>
                         </article>
                         <article className='column'>
-                            <FaCcMastercard className='icon'></FaCcMastercard>
-                            <span>Master card</span>
+                            <SiAmericanexpress className='icon'></SiAmericanexpress>
+                            <span>American express</span>
                         </article>
                         <article className='column'>
                             <BsTicketDetailed className='icon'></BsTicketDetailed>
@@ -105,10 +107,6 @@ function Accueil(){
                         <article className='column'>
                             <FaCcVisa className='icon'></FaCcVisa>
                             <span>Carte visa</span>
-                        </article>
-                        <article className='column'>
-                            <FaMoneyCheckAlt className='icon'></FaMoneyCheckAlt>
-                            <span>Carte ticket restaurant</span>
                         </article>
                         <article className='column'>
                             <MdAirplaneTicket className='icon'></MdAirplaneTicket>
@@ -128,7 +126,9 @@ function Accueil(){
                         <img src={accueil_aboutUs} alt='' />
                         <article>
                             <h2>À propos du Végétal:</h2>
-                            <span>Depuis 2023.<br></br> Une expérience de plus de 20 ans !</span>
+                            <span>Depuis 2023.</span>
+                            <br></br>
+                            <span> Une expérience de plus de 20 ans !</span>
                             <p>
                                 Le Végétal occupe une place privilégiée au cœur de la ruelle des Chats. 
                                 <br></br><br></br>
@@ -161,11 +161,11 @@ function Accueil(){
                         </article>
                         <article className='column'>
                             <FaChampagneGlasses className='icon'></FaChampagneGlasses>
-                            <span>Évènements privés</span>
+                            <span>Évènement privé</span>
                         </article>
                         <article className='column'>
                             <IoBag className='icon'></IoBag>
-                            <span>À emporter</span>
+                            <span>Soirée prestige</span>
                         </article>
                         {/* <article className='column'>
                             <GrWifi className='icon'></GrWifi>

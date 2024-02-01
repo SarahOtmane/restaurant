@@ -17,7 +17,7 @@ function Reservation(){
                     </center>
                     <article>
                         <span>Vous voulez gouter nos plats ?</span>
-                        <h1>Réservez maintenant !</h1>
+                        <h1>Réservez !</h1>
                     </article>
                 </section>
 

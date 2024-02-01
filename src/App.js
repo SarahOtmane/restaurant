@@ -8,6 +8,7 @@ import Reservation from './components/Reservation';
 import Menu from './components/Menu';
 import Boisson from './components/Boisson';
 import Accueil from './components/Accueil';
+import Restaurants from './components/Restaurants';
 
 function App(){
     return(
@@ -20,6 +21,7 @@ function App(){
                     <Route path="/reservation" element={<Reservation />} />
                     <Route path='/menu' element={<Menu />} />
                     <Route path='/boisson' element={<Boisson />} />
+                    <Route path='/autres-restaurants' element={<Restaurants />} />
                 </Routes>
             </>
         </BrowserRouter>
