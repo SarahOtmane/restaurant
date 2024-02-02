@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-import menu from '../assets/acceuil.png';
+import menu from '../assets/menu.png';
 
 function Menu(){
     return(
@@ -63,7 +63,7 @@ function Menu(){
 
                     <article className='column'>
                         <h3 className='underline'>Formule Jeune Pousse</h3>
-                        <span><strong>20€</strong></span>
+                        <span><strong>15€</strong></span>
                         <p>Enfant de - 12 ans</p>
                     </article>
                 </section>

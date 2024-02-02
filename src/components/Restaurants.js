@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-import reservation from '../assets/acceuil.png';
+import restau from '../assets/restau.png';
 import brut from '../assets/brut.jpeg';
 import bam from '../assets/bam.jpeg';
 import felix from '../assets/felix.jpg';
@@ -17,7 +17,7 @@ function Restaurants(){
             <main className="autresRestau h-100 back_vert">
                 <section className='section1 w-100'>
                     <center>
-                        <img src={reservation} alt='' />
+                        <img src={restau} alt='' />
                     </center>
                     <article>
                         <span>Vous voulez d'autres adresses ?</span>

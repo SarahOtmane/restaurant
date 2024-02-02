@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 
-import reservation from '../assets/acceuil.png';
+import reservation from '../assets/reservation.png';
 import reserv_info from '../assets/reserv_info.jpg';
 import Header from "./Header";
 // import reserv_info1 from '../assets/reserv_info1.jpeg';
@@ -16,7 +16,7 @@ function Reservation(){
                         <img src={reservation} alt='' />
                     </center>
                     <article>
-                        <span>Vous voulez gouter nos plats ?</span>
+                        <span>Vous voulez goûter nos plats ?</span>
                         <h1>Réservez !</h1>
                     </article>
                 </section>

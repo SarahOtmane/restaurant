@@ -6,9 +6,11 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 import Header from './Header';
-import accueil from '../assets/acceuil.png';
-import reservation from '../assets/acceuil.png';
-import menu from '../assets/acceuil.png';
+import accueil from '../assets/accueil.png';
+import reservation from '../assets/reservation.png';
+import menu from '../assets/menu.png';
+import boisson from '../assets/boisson.png';
+import restau from '../assets/restau.png';
 
 function Home(){
 
@@ -37,15 +39,15 @@ function Home(){
                 </SwiperSlide>
                 <SwiperSlide className='slide back_gris h-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={boisson} alt='' />
                     </center>
                         <h2><Link to='/boisson' className='link titre'>Carte des vins</Link></h2>
                 </SwiperSlide>
                 <SwiperSlide className='slide back_vert h-100'>
                     <center>
-                        <img src={accueil} alt='' />
+                        <img src={restau} alt='' />
                     </center>
-                        <h2><Link to='/boisson' className='link titre'>Nos restaurants</Link></h2>
+                        <h2><Link to='/autres-restaurants' className='link titre'>Nos restaurants</Link></h2>
                 </SwiperSlide>
             </Swiper>
         </main>

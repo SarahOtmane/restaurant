@@ -1,4 +1,4 @@
-import accueil from '../assets/acceuil.png';
+import accueil from '../assets/accueil.png';
 import accueil_horaires from '../assets/accueil_horaires.jpeg';
 import accueil_aboutUs from '../assets/accueil_about.jpg';
 import accueil_galerie_1 from '../assets/accueil_galerie_1.jpeg';
@@ -125,10 +125,12 @@ function Accueil(){
                     <div className='w-100 row'>
                         <img src={accueil_aboutUs} alt='' />
                         <article>
-                            <h2>À propos du Végétal:</h2>
-                            <span>Depuis 2023.</span>
-                            <br></br>
-                            <span> Une expérience de plus de 20 ans !</span>
+                            <h2>À propos du Végétal :</h2>
+                            <article className='span'>
+                                <span>Depuis 2023,</span>
+                                <br></br>
+                                <span> mais une expérience de plus de 20 ans !</span>
+                            </article>
                             <p>
                                 Le Végétal occupe une place privilégiée au cœur de la ruelle des Chats. 
                                 <br></br><br></br>

@@ -85,6 +85,10 @@
     font-family: 'grotesque_mt', sans-serif;
 }
 
+html, body{
+    height: 100%;
+}
+
 main{
     color: white;
 }
@@ -232,7 +236,7 @@ footer .droite, .menu .concept .droite{
 
 .slide img{
     width: 80%;
-    margin-top: -2rem;
+    margin-top: 0rem;
 }
 
 .slide h2{
@@ -254,16 +258,20 @@ footer .droite, .menu .concept .droite{
 
 
 /* ----------- 7:= .section1 ----------- */
+main .section1{
+    min-height: 100vh;
+    max-height: max-content;
+    overflow-x: hidden;
+}
 main .section1 img{
-    width: 80rem;
-    margin-left: 20rem;
+    width: 80%;
+    margin-left: 25%;
     margin-top: -1rem;
 }
 
 main .section1 article{
-    position: absolute;
-    top: 65%;
-    left: 15%;
+    margin-left: 5%;
+    margin-top: -23%;
 }
 
 main .section1 span{
@@ -355,14 +363,17 @@ main .section1 h1{
 
 .accueil .aboutUs h2{
     margin: 1rem 0;
+    font-size: 3.5rem;
 }
 
-.accueil .aboutUs h2, .accueil .aboutUs p, .accueil .aboutUs span{
+.accueil .aboutUs h2, .accueil .aboutUs p{
     margin-left: 5rem;
 }
 
-.accueil .aboutUs span{
-    font-size: 2rem;
+.accueil .aboutUs .span{
+    width: 100%;
+    padding-left: 5rem;
+    font-size: 1.5rem;
 }
 
 .accueil .aboutUs p{
@@ -653,8 +664,8 @@ footer .popup.donnee p{
 
 
 /* ----------- 13:= Restau ----------- */
-.autresRestau h1{
-    font-size: 8.5rem !important;
+.autresRestau .section1 h1{
+    font-size: 6rem;
 }
 
 .autresRestau .restau{
@@ -666,7 +677,6 @@ footer .popup.donnee p{
 .autresRestau .restau article{
     width: 20%;
     margin-bottom: 5rem;
-    padding-bottom: 3rem;
 }
 
 .autresRestau .restau img{
@@ -711,38 +721,25 @@ footer .popup.donnee p{
 
 
 /* ----------- 15:= Tablette and mobile ----------- */
-@media screen and (max-width: 1260px){
-    .header ul{
-        flex-direction: column!important;
-        font-size: 1rem;
+@media screen and (max-width: 1620px) {
+    .accueil .description .gauche, .accueil .horaires article, 
+    .accueil .paiement .droite, .accueil .aboutUs img,
+    footer .gauche, .menu .concept .gauche{
+        padding-left: 8rem;
     }
 
-    .slide img{
-        width: 95%;
-        margin-left: -10%;
-        margin-top: 0%;
+    .accueil .description .droite, .accueil .horaires img, 
+    .accueil .paiement .gauche, .accueil .aboutUs article,
+    footer .droite, .menu .concept .droite{
+        padding-right: 8rem;
     }
 
-    .slide h2{
-        font-size: 8rem;
-        top: 70%;
-        left: 10%;
+    .accueil .galerie, .boisson .list{
+        padding: 0 8rem;
     }
+}
 
-    main .section1 img{
-        width: 80%;
-        margin-left: 20%;
-        margin-top: 3rem;
-    }
-
-    main .section1 span{
-        font-size: 1rem;
-    }
-
-    main .section1 h1{
-        font-size: 4rem;
-    }
-
+@media screen and (max-width: 1400px) {
     .accueil .description .gauche, .accueil .horaires article, 
     .accueil .paiement .droite, .accueil .aboutUs img,
     footer .gauche, .menu .concept .gauche{
@@ -752,6 +749,61 @@ footer .popup.donnee p{
     .accueil .description .droite, .accueil .horaires img, 
     .accueil .paiement .gauche, .accueil .aboutUs article,
     footer .droite, .menu .concept .droite{
+        padding-right: 4rem;
+    }
+
+    .accueil .galerie,  .boisson .list{
+        padding: 0 4rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .header ul{
+        font-size: 1.5rem;
+    }
+
+    .slide img{
+        width: 80%;
+        margin-top: 3%;
+    }
+
+    .slide h2{
+        font-size: 6rem;
+        top: 68%;
+        left: 10%;
+    }
+
+    main .section1 img{
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 3rem;
+    }
+
+    main .section1 article{
+        top: 75%;
+        left: 10%;
+    }
+
+    main .section1 span{
+        font-size: 1.5rem;
+        margin-left: 4%;
+    }
+
+    main .section1 h1{
+        font-size: 8rem;
+        margin-top: -1rem;
+    }
+
+    .accueil .description .gauche, .accueil .horaires article, 
+    .accueil .paiement .droite, .accueil .aboutUs img,
+    footer .gauche, .menu .concept .gauche, .autresRestau .restau{
+        padding-left: 4rem;
+    }
+
+    .accueil .description .droite, .accueil .horaires img, 
+    .accueil .paiement .gauche, .accueil .aboutUs article,
+    footer .droite, .menu .concept .droite, .autresRestau .restau{
         padding-right: 4rem;
     }
 
@@ -804,18 +856,211 @@ footer .popup.donnee p{
         width: 50%;
     }
 
-    footer{
-        flex-direction: column!important;
+    footer, footer li button{
+        font-size: 1.5rem;
     }
 
     footer .droite{
-        padding-right: 0;
-        padding-left: 4rem;
+        padding-right: 3rem;
+    }
+
+    .boisson hr{
+        margin: 4rem auto 2rem;
+    }
+
+    .boisson .list,.boisson .champagne div,
+    .boisson .vin{
+        padding: 0 4rem;
+    }
+
+    .boisson .list .link{
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+    }
+
+    .boisson .champagne h2 + center span, .boisson .vin h2 + center span, .boisson .autre h2 + center span{
+        font-size: 2.5rem;
+    }
+
+    .boisson .vin h2{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .boisson .vin h2, .boisson .autre h2{
+        margin: 2rem auto 0;
+    }
+
+    .boisson .champagne h3, .boisson .vin h3, .boisson .autre h3{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    
+    .boisson .champagne h4, .boisson .vin h4, .boisson .autre h4{
+        font-size: 1.3rem;
+        margin: 1rem  0;
+    }
+
+    .boisson .champagne p{
+        font-size: 1.2rem;
     }
 }
 
+@media screen and (max-width: 1110px) {
+    .header h3 .link{
+        font-size: 2rem;
+    }
+    .header ul{
+        font-size: 1.3rem;
+    }
+    main .section1 span{
+        font-size: 1.1rem;
+        margin-left: 2rem;
+    }
+    main .section1 h1{
+        font-size: 6rem;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .header h3 .link{
+        font-size: 1.5rem;
+    }
+
+    .header ul{
+        font-size: 1rem;
+    }
+
+    .slide img{
+        width: 85%;
+    }
+
+    .accueil .horaires h2{
+        margin: 0 auto 1rem;
+    }
+
+    .accueil div.icon{
+        margin-top: 4rem;
+    }
+
+    .accueil .paiement div{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
+    .accueil .paiement article{
+        padding: 0!important;
+        margin-bottom: 2rem;
+        width: 25%;
+    }
+
+    .accueil .paiement article span{
+        text-align: center;
+    }
+
+    .accueil .galerie h2{
+        margin-top: 0;
+    }
+
+    .accueil .galerie{
+        padding: 0 4rem;
+    }
+
+    .accueil .galerie div{
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .accueil .galerie figure{
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .accueil .galerie figure:nth-child(2) img{
+        width: 30%;
+        margin-right: 5%;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .accueil .galerie figure:nth-child(2) img:last-child{
+        margin-right: 0;
+    }
+
+    .accueil .galerie img{
+        width: 45%;
+        height: 10rem;
+        border-radius: 1.5rem;
+    }
+
+    .accueil .galerie .imgMargin{
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 855px){
+    .boisson .list .link{
+        font-size: 1.2rem;
+    }
+}
+
+
 @media screen and (max-width: 768px){
-    
+    .header ul{
+        flex-direction: column!important;
+        font-size: 1rem;
+    }
+
+    .header h3 .link{
+        font-size: 3rem;
+    }
+
+    .slide img{
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 13%;
+    }
+
+    .slide h2{
+        font-size: 4rem;
+    }
+
+    main .section1 img{
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 3rem;
+    }
+
+    .reservation .info article p{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .boisson .list{
+        flex-wrap: wrap;
+    }
+
+    .boisson .list li{
+        width: 50%;
+        margin-bottom: 2.5rem;
+    }
+
+    .boisson .list .link{
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .autresRestau .restau article{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
 }
 
 
@@ -828,9 +1073,27 @@ footer .popup.donnee p{
 
 /* ----------- 16:= Mobile ----------- */
 @media screen and (max-width: 576px) {
+    .slide img{
+        width: 140%;
+        margin-left: -20%;
+        margin-top: 15%;
+    }
+
+    main .section1 img{
+        width: 140%;
+        margin-left: -20%;
+        margin-top: 20% !important;
+    }
+
+    main .section1 h1{
+        font-size: 4rem!important;
+        line-height: 4rem;
+        margin-top: -1rem;
+    }
+
     .accueil h2, .menu h2, .reservation h2, .boisson .champagne h2, 
     .boisson .vin h2, .boisson .autre h2{
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 
     .accueil .description div{
@@ -859,6 +1122,10 @@ footer .popup.donnee p{
         width: 90%;
     }
 
+    .accueil .horaires div, .accueil .horaires .joursOuv{
+        padding-right: 0;
+    }
+
     .accueil .horaires img{
         padding-left: 5%;
     }
@@ -869,17 +1136,6 @@ footer .popup.donnee p{
     }
 
     .accueil .paiement article{
-        margin-bottom: 2rem;
-    }
-
-    .accueil .paiement div{
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    .accueil .paiement article{
-        padding: 0!important;
-        margin-bottom: 2rem;
         width: 30%;
     }
 
@@ -892,8 +1148,13 @@ footer .popup.donnee p{
         font-size: 1rem;
     }
 
+    .accueil .aboutUs .span{
+        padding-left: 0;
+    }
+
     .accueil .service div{
         text-align: center;
+        padding-right: 0;
     }
 
     .accueil .service div article{
@@ -914,38 +1175,21 @@ footer .popup.donnee p{
         padding: 0;
     }
 
-    .accueil .galerie div{
-        flex-direction: column;
-        padding-bottom: 5rem;
-    }
-
     .accueil .galerie figure{
         width: 90%;
-        flex-direction: row;
     }
 
     .accueil .galerie figure:nth-child(2) img{
-        width: 33%;
+        width: 30%;
         height: 7rem;
     }
 
-    .accueil .galerie img{
-        width: 45%;
-        height: 10rem;
-        border-radius: 1.5rem;
-    }
-
-    .accueil .galerie .imgMargin{
-        margin-left: 10%;
-        margin-top: 0;
+    footer{
+        flex-direction: column!important;
     }
 
     footer, footer li button{
         font-size: 1rem;
-    }
-
-    footer .droite{
-        padding-left: 0;
     }
 
     .reservation .section1 h1{
@@ -960,11 +1204,6 @@ footer .popup.donnee p{
 
     .reservation .info article{
         font-size: 1rem;
-    }
-
-    .reservation .info article p{
-        width: 100%;
-        text-align: center;
     }
 
     .menu .concept div{
@@ -985,21 +1224,6 @@ footer .popup.donnee p{
 
     .menu .formules h3, .menu .formules span, .boisson .champagne h4, .boisson .vin h4,  .boisson .autre h4{
         font-size: 1.5rem;
-    }
-
-    .boisson .list{
-        flex-wrap: wrap;
-    }
-
-    .boisson .list li{
-        width: 50%;
-        margin-bottom: 2.5rem;
-    }
-
-    .boisson .list .link{
-        font-size: 1rem;
-        padding: 1rem;
-        border-radius: 2rem;
     }
 
     .boisson hr{
@@ -1034,6 +1258,15 @@ footer .popup.donnee p{
 
     .boisson .vin h3,  .boisson .autre h3{
         margin-top: 1rem;
+    }
+
+    .autresRestau .restau article{
+        width: 50%;
+    }
+
+    .autresRestau .restau img{
+        width: 90%;
+        height: 7rem;
     }
  
 }
