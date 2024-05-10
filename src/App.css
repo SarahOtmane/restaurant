@@ -91,6 +91,7 @@ html, body{
 
 main{
     color: white;
+    overflow-x: hidden;
 }
 
 ul{
@@ -261,7 +262,6 @@ footer .droite, .menu .concept .droite{
 main .section1{
     min-height: 100vh;
     max-height: max-content;
-    overflow-x: hidden;
 }
 main .section1 img{
     width: 80%;

@@ -46,9 +46,9 @@ function Accueil(){
                             <p>
                                 Bienvenue dans notre restaurant &#171;Le Végétal&#187;. <br></br> <br></br> L'endroit idéal pour une expérience gastronomique inoubliable ! 
                                 <br></br><br></br>
-                                Le concept : pas de carte.
+                                Le concept : un menu flexitarien.
                                 <br></br><br></br>
-                                Une formule en 5 actes, à travers les fruits et les légumes, où vous pouvez toujours ajouter de la viande et/ou du poisson avec l’option carné.
+                                Une formule midi/soir ou en 5 actes, à travers les fruits, les légumes, viande ou poisson.
                             </p>
                         </article>
                         <article className='droite'>
@@ -134,13 +134,13 @@ function Accueil(){
                             <p>
                                 Le Végétal occupe une place privilégiée au cœur de la ruelle des Chats. 
                                 <br></br><br></br>
-                                Un choix audacieux autour d'un menu mystère qui saura surprendre vos papilles.
+                                Un choix audacieux autour d'un menu qui saura surprendre vos papilles.
                                 <br></br><br></br>
-                                Formule du midi ou du soir avec une option carnée.
+                                Formule du midi ou du soir ou formule en 5 actes.
                                 <br></br> <br></br>
                                 En quête de qualité, Le Végétal privilégie les producteurs locaux. 
                                 <br></br><br></br>
-                                Nos principaux fournisseurs sont situés dans l'Aube.
+                                Nos principaux fournisseurs sont rigoureusement sélectionnés principalement dans l'Aube.
                                 <br></br> <br></br>
                                 Toute l'équipe du Végétal vous souhaite un moment agréable et gourmand, empreint de notre engagement envers la qualité et l'authenticité.
                             </p>

@@ -32,7 +32,7 @@ function Menu(){
                         </article>
                         <article className='droite'>
                             <p>
-                                En l'absence d'une carte fixe, chaque repas devient une aventure délectable, une exploration des saveurs saisonnières qui éveilleront vos papilles. 
+                                La base du flexitarien repose sur l'alimentation du 21ème siècle : manger équilibré et varié avec des produits de qualités issus de filières durables et responsables.
                                 Libérez-vous des choix préétablis et faites confiance à notre chef pour vous surprendre avec des créations culinaires uniques.
                             </p>
                         </article>
